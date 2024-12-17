@@ -47,6 +47,9 @@ h3{
 .navlink > li{
     margin: 5px 10px;
 }
+main{
+    background-color: #fafafaa8;
+}
 .navlink a{
     cursor: pointer;
     pointer-events: all;
@@ -66,6 +69,13 @@ h3{
 }
 .img{
     width: 600px;
+    min-width: 300px;
+}
+.imgbig {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
     min-width: 300px;
 }
 .unlink{
