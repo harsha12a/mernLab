@@ -14,7 +14,4 @@ let div = (a, b) => {
     return a / b
 }
 
-console.log(add(3, 4))
-console.log(sub(3, 4))
-console.log(mul(3, 4))
-console.log(div(3, 4))
+export {add, sub, mul, div}
