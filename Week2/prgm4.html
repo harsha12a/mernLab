@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="welcome-message">Hello, Guest!</h1>
+    </div>
+    <a href="https://www.google.com">google</a>
+
+    <script>
+        // Prompt the user for their name
+        let userName = prompt("Enter your name:");
+
+        // If the user entered a name, update the page and show a welcome alert
+        if (userName) {
+            document.getElementById("welcome-message").innerText = `Hello, ${userName}!`;
+            alert(`Welcome to ${userName}`);
+        }
+
+        // Handle navigation away (Back/Home button)
+        window.onbeforeunload = function () {
+            return `Goodbye ${userName}`;
+        };
+
+        // Handle unload event to show an alert
+        window.addEventListener("unload", function () {
+            alert(`Goodbye ${userName}`);
+        });
+    </script>
+
+</body>
+</html>

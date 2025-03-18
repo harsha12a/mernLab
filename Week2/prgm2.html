@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">no.table</h1>
+    <script>
+        let a = prompt('Enter a no. to generate no. table')
+        let res = ""
+        if(confirm()){
+            for(let i = 1; i <= 10; i++){
+                res += `${a} * ${i} = ${a * i}\n`
+            }
+            alert(res)
+        }
+        else alert('No')
+    </script>
+</body>
+</html>
