@@ -41,13 +41,9 @@
             document.getElementById("welcome-message").innerText = `Hello, ${userName}!`;
             alert(`Welcome to ${userName}`);
         }
-
-        // Handle navigation away (Back/Home button)
         window.onbeforeunload = function () {
             return `Goodbye ${userName}`;
         };
-
-        // Handle unload event to show an alert
         window.addEventListener("unload", function () {
             alert(`Goodbye ${userName}`);
         });
